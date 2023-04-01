@@ -1,6 +1,7 @@
 # import libraries
 import networkx as nx
 
+# Creat a main function
 def main(): 
      
     # Create a graph
@@ -13,9 +14,17 @@ def main():
     print(f"There are {network.number_of_nodes()} provinces in total.")
 
     # Add edges
-    network.add_edge('Chumphon', 'Ranong'), network.add_edge('Chumphon', 'Surat Thani'), network.add_edge('Krabi', 'Phang Nga'), network.add_edge('Ranong', 'Phang Nga'), network.add_edge('Ranong', 'Surat Thani'), network.add_edge('Surat Thani', 'Krabi'), network.add_edge('Surat Thani', 'Nakhon Si Thammarat'), network.add_edge('Surat Thani', 'Phang Nga'), 
-    network.add_edge('Krabi', 'Trang'), network.add_edge('Krabi', 'Nakhon Si Thammarat'), network.add_edge('Trang', 'Nakhon Si Thammarat'), network.add_edge('Phatthalung', 'Nakhon Si Thammarat'), network.add_edge('Songkhla', 'Nakhon Si Thammarat'), network.add_edge('Trang', 'Satun'), network.add_edge('Phatthalung', 'Satun'), network.add_edge('Trang', 'Phatthalung'), 
-    network.add_edge('Phatthalung', 'Songkhla'), network.add_edge('Songkhla', 'Pattani'), network.add_edge('Pattani', 'Narathiwat'), network.add_edge('Pattani', 'Yala'), network.add_edge('Narathiwat', 'Yala'), network.add_edge('Yala', 'Songkhla'), network.add_edge('Songkhla', 'Satun'), network.add_edge('Phuket', 'Phang Nga')
+    network.add_edge('Chumphon', 'Ranong'), network.add_edge('Chumphon', 'Surat Thani'), 
+    network.add_edge('Krabi', 'Phang Nga'), network.add_edge('Ranong', 'Phang Nga'), 
+    network.add_edge('Ranong', 'Surat Thani'), network.add_edge('Surat Thani', 'Krabi'), 
+    network.add_edge('Surat Thani', 'Nakhon Si Thammarat'), network.add_edge('Surat Thani', 'Phang Nga'), 
+    network.add_edge('Krabi', 'Trang'), network.add_edge('Krabi', 'Nakhon Si Thammarat'), 
+    network.add_edge('Trang', 'Nakhon Si Thammarat'), network.add_edge('Phatthalung', 'Nakhon Si Thammarat'), 
+    network.add_edge('Songkhla', 'Nakhon Si Thammarat'), network.add_edge('Trang', 'Satun'), 
+    network.add_edge('Phatthalung', 'Satun'), network.add_edge('Trang', 'Phatthalung'), 
+    network.add_edge('Phatthalung', 'Songkhla'), network.add_edge('Songkhla', 'Pattani'), 
+    network.add_edge('Pattani', 'Narathiwat'), network.add_edge('Pattani', 'Yala'), network.add_edge('Narathiwat', 'Yala'), 
+    network.add_edge('Yala', 'Songkhla'), network.add_edge('Songkhla', 'Satun'), network.add_edge('Phuket', 'Phang Nga')
     
     # Add edge weights
     edge_labels = {('Chumphon', 'Ranong'): 123.0, ('Ranong', 'Chumphon'): 123.0,
